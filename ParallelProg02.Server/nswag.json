@@ -1,0 +1,24 @@
+﻿{
+  "runtime": "Net80",
+  "documentGenerator": {
+    "aspNetCoreToOpenApi": {
+      "project": "ParallelProg02.Server.csproj",
+      "configuration": "Debug",
+      "noBuild": true
+    }
+  },
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "className": "Client",
+      "OperationGenerationMode": "SingleClientFromOperationId",
+      "namespace": "ParallelProg02.Client",
+      "output": "../ParallelProg02.Client/Proxy.cs",
+      "generateClientInterfaces": true,
+      "injectHttpClient": true,
+      "disposeHttpClient": false,
+      "generateExceptionClasses": true,
+      "generateSyncMethods": true,
+      "jsonLibrary": "SystemTextJson"
+    }
+  }
+}
